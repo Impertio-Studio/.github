@@ -12,7 +12,9 @@
 
 ## Over ons
 
-Impertio Studio bevrijdt bedrijven van dure vendor lock-in door hun complete digitale ecosysteem te transformeren naar open source. Vanuit **Dordrecht** bouwen wij aan een compleet ecosysteem van **30+ open source tools**, gecombineerd met AI-gedreven automatisering, dat vakmanschap vergroot en administratieve lasten drastisch vermindert.
+Jouw bedrijf, jouw data, jouw vrijheid. Impertio Studio maakt open source software toegankelijk voor bedrijven in Nederland. Vanuit **Dordrecht** bouwen wij aan een compleet ecosysteem van **30+ open source tools** — van ERP tot cloud, van AI-automatisering tot BIM-integratie.
+
+Professionele implementatie met Nederlandse hosting en persoonlijke begeleiding. Geen licentiekosten, geen vendor lock-in, volledige controle over jouw bedrijfsprocessen en data.
 
 <img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/gradient-line.svg" alt="" width="100%"/>
 
@@ -20,13 +22,29 @@ Impertio Studio bevrijdt bedrijven van dure vendor lock-in door hun complete dig
 
 | Domein | Oplossing | Resultaat |
 |--------|-----------|-----------|
-| **ERP & CRM** | ERPNext · Frappe | Volledige bedrijfsvoering, geen licentiekosten |
-| **Documentbeheer** | NextCloud · OnlyOffice | Samenwerken zonder vendor lock-in |
+| **ERP & CRM** | ERPNext · Frappe | Volledige bedrijfsvoering, open en transparant |
+| **Cloud & Samenwerking** | NextCloud · OnlyOffice | Veilig samenwerken op eigen infrastructuur |
 | **AI Automatisering** | Mistral AI · Custom Agents | Slimmer werken, minder handmatig werk |
 | **BIM & Engineering** | Blender · Bonsai · IfcOpenShell | Open standaarden, volledige vrijheid |
 | **E-mail & Agenda** | Mailcow | Zelfgehost, volledig onder eigen beheer |
-| **Hosting & Cloud** | Eigen infrastructuur | Data in Nederland, volledige controle |
+| **Hosting & Cloud** | Eigen infrastructuur | Data in Europa, AVG-compliant |
 
+<img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/gradient-line.svg" alt="" width="100%"/>
+
+## Waarom open source
+
+<table>
+  <tr>
+    <td width="33%" align="center"><b>€0 licentiekosten</b><br/><sub>De software is gratis, voor altijd</sub></td>
+    <td width="33%" align="center"><b>100% jouw eigendom</b><br/><sub>Exporteer alles, wanneer je wilt</sub></td>
+    <td width="33%" align="center"><b>Nederlandse hosting</b><br/><sub>Europese datacenters, AVG-compliant</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Eerlijke prijzen</b><br/><sub>Transparant, zonder verrassingen</sub></td>
+    <td align="center"><b>Snelle implementatie</b><br/><sub>Weken in plaats van maanden</sub></td>
+    <td align="center"><b>Lokale expertise</b><br/><sub>Nederlands team dat je taal spreekt</sub></td>
+  </tr>
+</table>
 
 <img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/gradient-line.svg" alt="" width="100%"/>
 
@@ -53,6 +71,8 @@ Impertio Studio bevrijdt bedrijven van dure vendor lock-in door hun complete dig
 
 Onze open source tools worden ontwikkeld via de [**OpenAEC Foundation**](https://github.com/OpenAEC-Foundation) — onze non-profit zusterorganisatie met **30+ projecten** voor de gehele bouwketen: van BIM-modellering en engineering tot documentbeheer en AI-automatisering.
 
+Open source software wordt continu verbeterd door een wereldwijde community. Wij maken het toegankelijk.
+
 <img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/gradient-line.svg" alt="" width="100%"/>
 
 ## Team
@@ -60,20 +80,20 @@ Onze open source tools worden ontwikkeld via de [**OpenAEC Foundation**](https:/
 <table>
   <tr>
     <td align="center" width="50%">
-      <a href="https://github.com/DutchSailor"><img src="https://github.com/DutchSailor.png" width="80" style="border-radius:50%" alt="Maarten"/></a><br/>
+      <a href="https://github.com/DutchSailor"><img src="https://images.weserv.nl/?url=github.com/DutchSailor.png&h=120&w=120&fit=cover&mask=circle&maxage=7d" width="100" alt="Maarten"/></a><br/>
       <b>Maarten Vroegindeweij</b><br/>
       <sub>Founder & CEO</sub><br/>
       <sub>16 years of experience in the AEC industry</sub><br/><br/>
-      <a href="https://github.com/DutchSailor"><img src="https://img.shields.io/badge/GitHub-0a0a0a?style=flat-square&logo=github&logoColor=white" alt="GitHub"/></a>
-      <a href="https://www.linkedin.com/in/maarten-vroegindeweij/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+      <a href="https://github.com/DutchSailor"><img src="https://img.shields.io/badge/-0a0a0a?style=flat-square&logo=github&logoColor=white" alt="GitHub"/></a>
+      <a href="https://www.linkedin.com/in/maarten-vroegindeweij/"><img src="https://img.shields.io/badge/-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
     </td>
     <td align="center" width="50%">
-      <a href="https://github.com/FreekHeijting"><img src="https://github.com/FreekHeijting.png" width="80" style="border-radius:50%" alt="Freek"/></a><br/>
+      <a href="https://github.com/FreekHeijting"><img src="https://images.weserv.nl/?url=github.com/FreekHeijting.png&h=120&w=120&fit=cover&mask=circle&maxage=7d" width="100" alt="Freek"/></a><br/>
       <b>Freek Heijting</b><br/>
       <sub>Co-Founder & AI Engineer</sub><br/>
       <sub>Mechanical Engineering · Automation · AI Ecosystems</sub><br/><br/>
-      <a href="https://github.com/FreekHeijting"><img src="https://img.shields.io/badge/GitHub-0a0a0a?style=flat-square&logo=github&logoColor=white" alt="GitHub"/></a>
-      <a href="https://www.linkedin.com/in/freek-heijting-aa4a73279/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+      <a href="https://github.com/FreekHeijting"><img src="https://img.shields.io/badge/-0a0a0a?style=flat-square&logo=github&logoColor=white" alt="GitHub"/></a>
+      <a href="https://www.linkedin.com/in/freek-heijting-aa4a73279/"><img src="https://img.shields.io/badge/-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
     </td>
   </tr>
 </table>
@@ -87,7 +107,6 @@ Onze open source tools worden ontwikkeld via de [**OpenAEC Foundation**](https:/
 | 🌐 **Website** | [impertio.nl](https://www.impertio.nl) |
 | 📧 **Email** | [info@impertio.nl](mailto:info@impertio.nl) |
 | 📍 **Locatie** | Dordrecht, Nederland |
-| 🏢 **Opgericht** | Januari 2026 |
 
 ---
 
