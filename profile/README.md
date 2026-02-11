@@ -84,16 +84,16 @@ Open source software wordt continu verbeterd door een wereldwijde community. Wij
       <b>Maarten Vroegindeweij</b><br/>
       <sub>Founder & CEO</sub><br/>
       <sub>16 years of experience in the AEC industry</sub><br/><br/>
-      <a href="https://github.com/DutchSailor"><img src="https://img.shields.io/badge/-0a0a0a?style=flat-square&logo=github&logoColor=white" alt="GitHub"/></a>
-      <a href="https://www.linkedin.com/in/maarten-vroegindeweij/"><img src="https://img.shields.io/badge/-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+      <a href="https://github.com/DutchSailor"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/github-badge.svg" height="28" alt="GitHub"/></a>
+      <a href="https://www.linkedin.com/in/maarten-vroegindeweij/"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/linkedin-badge.svg" height="28" alt="LinkedIn"/></a>
     </td>
     <td align="center" width="50%">
       <a href="https://github.com/FreekHeijting"><img src="https://images.weserv.nl/?url=github.com/FreekHeijting.png&h=120&w=120&fit=cover&mask=circle&maxage=7d" width="100" alt="Freek"/></a><br/>
       <b>Freek Heijting</b><br/>
       <sub>Co-Founder & AI Engineer</sub><br/>
       <sub>Mechanical Engineering · Automation · AI Ecosystems</sub><br/><br/>
-      <a href="https://github.com/FreekHeijting"><img src="https://img.shields.io/badge/-0a0a0a?style=flat-square&logo=github&logoColor=white" alt="GitHub"/></a>
-      <a href="https://www.linkedin.com/in/freek-heijting-aa4a73279/"><img src="https://img.shields.io/badge/-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+      <a href="https://github.com/FreekHeijting"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/github-badge.svg" height="28" alt="GitHub"/></a>
+      <a href="https://www.linkedin.com/in/freek-heijting-aa4a73279/"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/linkedin-badge.svg" height="28" alt="LinkedIn"/></a>
     </td>
   </tr>
 </table>
