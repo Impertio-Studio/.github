@@ -1,6 +1,6 @@
 # Included in this PR
 
-<!-- List the specific changes. Be precise. -->
+<!-- List the specific changes. For example: "Added {COMPONENT_NAME} to do x" -->
 
 -
 -
@@ -8,7 +8,7 @@
 
 ## What needs to be tested
 
-<!-- Step-by-step instructions for reviewers to verify this works. -->
+<!-- What changes need to be verified by the reviewer. Add any information needed to test. -->
 
 1.
 2.
@@ -17,7 +17,7 @@
 
 ## Related Issues / Issues to be merged first
 
-<!-- Link related tickets or issues. Use "Closes #123" to auto-close. -->
+<!-- Link related tickets or issues. (You can link items with '#') -->
 
 ## Screenshots
 
