@@ -18,6 +18,9 @@ Manifest precedence (most specific first):
   1. .claude-plugin/plugin.json  (Claude Code plugins)
   2. pyproject.toml              (Frappe / Python apps)
   3. package.json               (skill-packages / templates / JS apps)
+  4. VERSION                     (language-agnostic plain-text fallback:
+                                  docs / scaffolds / templates without any
+                                  language manifest; one semver line)
 
 Notes are NOT required to be present here: on a genuine bump the caller workflow
 enforces that a CHANGELOG section exists (notes_found=true). Keeping that policy
@@ -45,6 +48,27 @@ def read_json_version(path: Path) -> str:
     if not isinstance(version, str) or not version.strip():
         die(f"{path} has no string 'version' field")
     return version.strip()
+
+
+# A plain-text VERSION file must hold exactly one semver line. This is stricter
+# than the JSON/TOML readers on purpose: a schemaless text file has no field to
+# key on, so the semver shape is the only guard against a stray "VERSION" file
+# (e.g. licensing text) being mistaken for a release manifest. Fail loud, no
+# guessing.
+_SEMVER_RE = re.compile(r"^\d+\.\d+\.\d+(?:[-+][0-9A-Za-z.-]+)?$")
+
+
+def read_version_file(path: Path) -> str:
+    lines = [ln.strip() for ln in path.read_text(encoding="utf-8").splitlines()]
+    nonblank = [ln for ln in lines if ln]
+    if not nonblank:
+        die(f"{path} is empty; expected a single semver line (e.g. 0.1.0)")
+    if len(nonblank) > 1:
+        die(f"{path} has multiple non-blank lines; expected a single semver line")
+    version = nonblank[0]
+    if not _SEMVER_RE.match(version):
+        die(f"{path} content '{version}' is not a valid semver (e.g. 0.1.0)")
+    return version
 
 
 def read_module_version(module_file: Path) -> str | None:
@@ -111,9 +135,13 @@ def detect(repo: Path) -> tuple[str, str]:
     if package.is_file():
         return "package.json", read_json_version(package)
 
+    version_file = repo / "VERSION"
+    if version_file.is_file():
+        return "VERSION", read_version_file(version_file)
+
     die(
         f"no release manifest found in '{repo}'. Expected one of: "
-        ".claude-plugin/plugin.json, pyproject.toml, package.json"
+        ".claude-plugin/plugin.json, pyproject.toml, package.json, VERSION"
     )
 
 
