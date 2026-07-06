@@ -1,0 +1,19 @@
+# Copy this file to `.github/workflows/release.yml` in your repository to adopt
+# the org-wide release automation. On every push to `main` it tags `v<version>`
+# and publishes a GitHub Release — but only when the version in your manifest
+# (.claude-plugin/plugin.json, pyproject.toml, or package.json) was bumped.
+# A main-merge that did not bump the version is a clean no-op.
+#
+# See docs/release-workflow.md in Impertio-Studio/.github for the full guide.
+name: Release
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    uses: Impertio-Studio/.github/.github/workflows/release.yml@main
