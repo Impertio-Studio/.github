@@ -1,0 +1,87 @@
+name: Release
+
+# Org-wide reusable release workflow for Impertio-Studio repositories.
+#
+# A caller repo invokes this on every push to `main` (see release.yml.template
+# and docs/release-workflow.md). The design reconciles two goals that seem to
+# pull against each other:
+#
+#   "every main-merge triggers a release"   +   "no broken double releases"
+#
+# It does so by making the VERSION BUMP the real release signal, not the merge:
+# the workflow reads the repo's version manifest and only tags + releases when
+# the tag `v<version>` does NOT yet exist. A docs-only merge that did not bump
+# the version finds the tag already present and exits cleanly as a no-op. The
+# operation is therefore idempotent — re-running on the same commit changes
+# nothing.
+#
+# Version source (strict precedence, exactly one manifest per repo):
+#   1. .claude-plugin/plugin.json   (Claude Code plugins)
+#   2. pyproject.toml               (Frappe / Python apps; static or dynamic)
+#   3. package.json                 (skill-packages / templates / JS apps)
+#
+# It fails loud (no silent fallback): a missing manifest is an error, and a
+# bump without a matching `## [<version>]` section in CHANGELOG.md is an error.
+
+on:
+  workflow_call:
+
+permissions:
+  contents: write # create tags and GitHub Releases in the caller repo
+
+jobs:
+  release:
+    name: Tag + Release on version bump
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout caller repo (at the merged commit)
+        uses: actions/checkout@v4
+        with:
+          path: repo
+
+      - name: Checkout release tooling (Impertio-Studio/.github)
+        uses: actions/checkout@v4
+        with:
+          repository: Impertio-Studio/.github
+          ref: main
+          path: release-tooling
+
+      - name: Detect version + extract CHANGELOG notes
+        id: detect
+        env:
+          RELEASE_NOTES_FILE: ${{ github.workspace }}/release-notes.md
+        run: |
+          python3 release-tooling/scripts/detect-release.py repo
+
+      - name: Check whether the tag already exists
+        id: tagcheck
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.detect.outputs.tag }}
+        run: |
+          if gh api "repos/${{ github.repository }}/git/ref/tags/${TAG}" >/dev/null 2>&1; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+            echo "Tag ${TAG} already exists — this merge did not bump the version. No-op, clean exit."
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+            echo "Tag ${TAG} does not exist — version was bumped. A release will be created."
+          fi
+
+      - name: Guard — a version bump must carry CHANGELOG notes
+        if: steps.tagcheck.outputs.exists == 'false' && steps.detect.outputs.notes_found != 'true'
+        run: |
+          echo "::error::Version ${{ steps.detect.outputs.version }} has no '## [${{ steps.detect.outputs.version }}]' section in CHANGELOG.md. A release bump must document its notes."
+          exit 1
+
+      - name: Create tag + GitHub Release
+        if: steps.tagcheck.outputs.exists == 'false'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          TAG: ${{ steps.detect.outputs.tag }}
+        run: |
+          gh release create "${TAG}" \
+            --target "${{ github.sha }}" \
+            --title "${TAG}" \
+            --notes-file "${{ github.workspace }}/release-notes.md"
+          echo "Published release ${TAG} on ${{ github.sha }}."
