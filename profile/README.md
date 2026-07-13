@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/header.svg" alt="Impertio Studio" width="100%"/>
+  
 </p>
 
 <p align="center">
