@@ -4,12 +4,13 @@
 
 Impertio Studio builds complete, custom business systems on a stack of open source software. At the core sits ERPNext, which lays a strong, structured foundation, extended with modern React frontends on Frappe and shaped to how each client actually works. Around that core we integrate a full ecosystem, from Nextcloud for documents, communication, chat and video calls, and Stalwart for mail, to offline-capable field apps and an AI layer, into one connected environment with a single source of truth instead of disconnected islands.
 
-Standard where possible, custom where it matters. We run it as managed cloud on European servers, with EU data sovereignty, no vendor lock-in, and your data always exportable and yours. Experienced developers steer and review every step, so nothing reaches production unchecked. We also contribute our non-client-specific tooling for the AEC industry through the [OpenAEC Foundation](https://github.com/OpenAEC-Foundation).
+Standard where possible, custom where it matters. We run it as managed cloud on European servers, with EU data sovereignty, no vendor lock-in, and your data always exportable and yours.
 
 <img src="https://raw.githubusercontent.com/Impertio-Studio/.github/development/profile/gradient-line.svg" alt="" width="100%"/>
 
 ## Team
 
+<div align="center">
 <table width="100%">
   <tr>
     <td align="center" width="33%" valign="top">
@@ -35,6 +36,7 @@ Standard where possible, custom where it matters. We run it as managed cloud on 
     </td>
   </tr>
 </table>
+</div>
 
 <img src="https://raw.githubusercontent.com/Impertio-Studio/.github/development/profile/gradient-line.svg" alt="" width="100%"/>
 
