@@ -2,41 +2,29 @@
 
 ## About us
 
-Impertio Studio builds complete, custom business systems on a stack of open source software. At the core sits ERPNext, which lays a strong, structured foundation, extended with modern React frontends on Frappe and shaped to how each client actually works. Around that core we integrate a full ecosystem, from Nextcloud for documents, communication, chat and video calls, and Stalwart for mail, to offline-capable field apps and an AI layer, into one connected environment with a single source of truth instead of disconnected islands.
+Impertio Studio builds complete, custom business systems on a stack of open source software. ERPNext forms the structured core, extended with modern React frontends on Frappe and shaped around how each client actually works. Around it we integrate a full ecosystem, from Nextcloud for documents, communication, chat and video calls, and Stalwart for mail, to offline-capable field apps and an AI layer, into one connected environment with a single source of truth instead of disconnected islands.
 
-Standard where possible, custom where it matters. We run it as managed cloud on European servers, with EU data sovereignty, no vendor lock-in, and your data always exportable and yours.
+Standard where possible, custom where it matters. We run everything as managed cloud on European servers, with EU data sovereignty, no vendor lock-in, and your data always exportable and yours.
 
 <img src="https://raw.githubusercontent.com/Impertio-Studio/.github/development/profile/gradient-line.svg" alt="" width="100%"/>
 
 ## Team
 
-<div align="center">
-<table width="100%">
-  <tr>
-    <td align="center" width="33%" valign="top">
-      <a href="https://github.com/FreekHeijting"><img src="https://images.weserv.nl/?url=github.com/FreekHeijting.png&h=240&w=240&fit=cover&mask=circle&maxage=7d" width="115" alt="Freek Heijting"/></a><br/>
-      <b>Freek Heijting</b><br/>
-      <sub>Founder</sub><br/><br/>
-      <a href="https://github.com/FreekHeijting"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/development/profile/github-badge.svg" height="26" alt="GitHub"/></a>
-      <a href="https://www.linkedin.com/in/freek-heijting-aa4a73279/"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/development/profile/linkedin-badge.svg" height="26" alt="LinkedIn"/></a>
-    </td>
-    <td align="center" width="33%" valign="top">
-      <a href="https://github.com/Dollee-404"><img src="https://images.weserv.nl/?url=raw.githubusercontent.com/Impertio-Studio/.github/development/profile/team/eelke.png&h=240&w=240&fit=cover&mask=circle&maxage=7d" width="115" alt="Eelke Dollee"/></a><br/>
-      <b>Eelke Dollee</b><br/>
-      <sub>Technical&nbsp;Sales&nbsp;Consultant</sub><br/><br/>
-      <a href="https://github.com/Dollee-404"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/development/profile/github-badge.svg" height="26" alt="GitHub"/></a>
-      <a href="https://www.linkedin.com/in/eelke-dollee-58780b17a/"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/development/profile/linkedin-badge.svg" height="26" alt="LinkedIn"/></a>
-    </td>
-    <td align="center" width="33%" valign="top">
-      <a href="https://github.com/RensGits"><img src="https://images.weserv.nl/?url=raw.githubusercontent.com/Impertio-Studio/.github/development/profile/team/rens.jpeg&h=240&w=240&fit=cover&mask=circle&maxage=7d" width="115" alt="Rens van Driel"/></a><br/>
-      <b>Rens van Driel</b><br/>
-      <sub>Frontend&nbsp;&amp;&nbsp;Design</sub><br/><br/>
-      <a href="https://github.com/RensGits"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/development/profile/github-badge.svg" height="26" alt="GitHub"/></a>
-      <a href="https://www.linkedin.com/in/rens-van-driel-b3b6514a/"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/development/profile/linkedin-badge.svg" height="26" alt="LinkedIn"/></a>
-    </td>
-  </tr>
-</table>
-</div>
+<p align="center">
+  <a href="https://github.com/FreekHeijting"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/development/profile/team/card-freek.svg" width="30%" alt="Freek Heijting, Founder"/></a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/Dollee-404"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/development/profile/team/card-eelke.svg" width="30%" alt="Eelke Dollee, Technical Sales Consultant"/></a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/RensGits"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/development/profile/team/card-rens.svg" width="30%" alt="Rens van Driel, Frontend & Design"/></a>
+</p>
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/freek-heijting-aa4a73279/"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/development/profile/linkedin-badge.svg" height="24" alt="Freek on LinkedIn"/></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://www.linkedin.com/in/eelke-dollee-58780b17a/"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/development/profile/linkedin-badge.svg" height="24" alt="Eelke on LinkedIn"/></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://www.linkedin.com/in/rens-van-driel-b3b6514a/"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/development/profile/linkedin-badge.svg" height="24" alt="Rens on LinkedIn"/></a>
+</p>
 
 <img src="https://raw.githubusercontent.com/Impertio-Studio/.github/development/profile/gradient-line.svg" alt="" width="100%"/>
 
