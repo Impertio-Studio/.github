@@ -27,13 +27,13 @@ Standard where possible, custom where it matters. We run it as managed cloud on 
       <a href="https://github.com/Dollee-404"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/github-badge.svg" height="26" alt="GitHub"/></a>
       <a href="https://www.linkedin.com/in/eelke-dollee-58780b17a/"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/linkedin-badge.svg" height="26" alt="LinkedIn"/></a>
     </td>
-    <td align="center" width="33%" valign="top">
+    <!-- <td align="center" width="33%" valign="top">
       <a href="https://github.com/RensGits"><img src="https://images.weserv.nl/?url=raw.githubusercontent.com/Impertio-Studio/.github/main/profile/team/rens.jpeg&h=240&w=240&fit=cover&mask=circle&maxage=7d" width="115" alt="Rens van Driel"/></a><br/>
       <b>Rens van Driel</b><br/>
       <sub>Frontend&nbsp;&amp;&nbsp;Design</sub><br/><br/>
       <a href="https://github.com/RensGits"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/github-badge.svg" height="26" alt="GitHub"/></a>
       <a href="https://www.linkedin.com/in/rens-van-driel-b3b6514a/"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/linkedin-badge.svg" height="26" alt="LinkedIn"/></a>
-    </td>
+    </td> -->
   </tr>
 </table>
 </div>
