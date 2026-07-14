@@ -13,14 +13,14 @@ Standard where possible, custom where it matters. We run it as managed cloud on 
 <div align="center">
 <table width="100%">
   <tr>
-    <td align="center" width="50%" valign="top">
+    <td align="center" width="230px" valign="top">
       <a href="https://github.com/FreekHeijting"><img src="https://images.weserv.nl/?url=github.com/FreekHeijting.png&h=240&w=240&fit=cover&mask=circle&maxage=7d" width="115" alt="Freek Heijting"/></a><br/>
       <b>Freek Heijting</b><br/>
       <sub>Founder</sub><br/><br/>
       <a href="https://github.com/FreekHeijting"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/github-badge.svg" height="26" alt="GitHub"/></a>
       <a href="https://www.linkedin.com/in/freek-heijting-aa4a73279/"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/linkedin-badge.svg" height="26" alt="LinkedIn"/></a>
     </td>
-    <td align="center" width="50" valign="top">
+    <td align="center" width="230px" valign="top">
       <a href="https://github.com/Dollee-404"><img src="https://images.weserv.nl/?url=raw.githubusercontent.com/Impertio-Studio/.github/main/profile/team/eelke.png&h=240&w=240&fit=cover&mask=circle&maxage=7d" width="115" alt="Eelke Dollee"/></a><br/>
       <b>Eelke Dollee</b><br/>
       <sub>Technical&nbsp;Sales&nbsp;Consultant</sub><br/><br/>
