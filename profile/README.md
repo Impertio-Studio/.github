@@ -6,7 +6,7 @@ Impertio Studio builds custom, modern React frontends on top of open-source busi
 
 We build AI-assisted, steered and reviewed by experienced developers, and contribute our tooling for the AEC industry through the [OpenAEC Foundation](https://github.com/OpenAEC-Foundation).
 
-<img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/gradient-line.svg" alt="" width="100%"/>
+<img src="https://raw.githubusercontent.com/Impertio-Studio/.github/development/profile/gradient-line.svg" alt="" width="100%"/>
 
 ## Team
 
@@ -31,19 +31,19 @@ We build AI-assisted, steered and reviewed by experienced developers, and contri
   </tr>
   <tr>
     <td align="center" width="50%">
-      <img src="https://images.weserv.nl/?url=raw.githubusercontent.com/Impertio-Studio/.github/main/profile/team/eelke.jpeg&h=120&w=120&fit=cover&mask=circle&maxage=7d" width="100" alt="Eelke"/><br/>
+      <img src="https://images.weserv.nl/?url=raw.githubusercontent.com/Impertio-Studio/.github/development/profile/team/eelke.png&h=120&w=120&fit=cover&mask=circle&maxage=7d" width="100" alt="Eelke"/><br/>
       <b>Eelke Dollee</b><br/>
       <sub>Technical Sales Consultant</sub>
     </td>
     <td align="center" width="50%">
-      <img src="https://images.weserv.nl/?url=raw.githubusercontent.com/Impertio-Studio/.github/main/profile/team/rens.png&h=120&w=120&fit=cover&mask=circle&maxage=7d" width="100" alt="Rens"/><br/>
+      <img src="https://images.weserv.nl/?url=raw.githubusercontent.com/Impertio-Studio/.github/development/profile/team/rens.jpeg&h=120&w=120&fit=cover&mask=circle&maxage=7d" width="100" alt="Rens"/><br/>
       <b>Rens van Driel</b><br/>
       <sub>Frontend & Design</sub>
     </td>
   </tr>
 </table>
 
-<img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/gradient-line.svg" alt="" width="100%"/>
+<img src="https://raw.githubusercontent.com/Impertio-Studio/.github/development/profile/gradient-line.svg" alt="" width="100%"/>
 
 <p align="center">
   <sub><b>Impertio Studio B.V.</b> &middot; Dordrecht, Netherlands &middot; <a href="https://www.impertio.nl">impertio.nl</a></sub>
