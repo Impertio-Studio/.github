@@ -1,119 +1,42 @@
+<!--
+  BANNER: interim static brand banner (profile/banner.png, 1280x320, dark,
+  warm-monochrome huisstijl). This is a placeholder for the real deliverable:
+  a DYNAMIC banner we intend to build in the future (animated SVG, in the spirit
+  of the earlier header.svg). When that dynamic banner is ready, replace the
+  <img> below with it. Keep the reserved slot at the very top of the profile.
+-->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/header.svg" alt="Impertio Studio" width="100%"/>
+  <img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/banner.png" alt="Impertio Studio" width="100%"/>
 </p>
 
-<p align="center">
-  <a href="https://www.impertio.nl"><img src="https://img.shields.io/badge/impertio.nl-ff6b00?style=for-the-badge&logoColor=white" alt="Website"/></a>
-  <a href="mailto:info@impertio.nl"><img src="https://img.shields.io/badge/info@impertio.nl-0a0a0a?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-  <a href="https://github.com/OpenAEC-Foundation"><img src="https://img.shields.io/badge/OpenAEC_Foundation-00ff88?style=for-the-badge&logo=github&logoColor=0a0a0a" alt="OpenAEC Foundation"/></a>
-</p>
+<br/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/head-aboutus-light.png"/>
+  <img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/head-aboutus-dark.png" alt="About us" height="28"/>
+</picture>
+<br/>
 
-<img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/gradient-line.svg" alt="" width="100%"/>
+Impertio Studio builds complete, custom business systems on a stack of open source software. At the core sits ERPNext, which lays a strong, structured foundation, extended with modern React frontends on Frappe and shaped to how each client actually works. Around that core we integrate a full ecosystem, from Nextcloud for documents, communication, chat and video calls, and Stalwart for mail, to offline-capable field apps and an AI layer, into one connected environment with a single source of truth instead of disconnected islands.
 
-## Over ons
+Standard where possible, custom where it matters. We run it as managed cloud on European servers, with EU data sovereignty, no vendor lock-in, and your data always exportable and yours.
 
-Jouw bedrijf, jouw data, jouw vrijheid. Impertio Studio maakt open source software toegankelijk voor bedrijven in Nederland. Vanuit **Dordrecht** bouwen wij aan een compleet ecosysteem van **30+ open source tools** — van ERP tot cloud, van AI-automatisering tot BIM-integratie.
+<br/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/head-team-light.png"/>
+  <img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/head-team-dark.png" alt="Team" height="28"/>
+</picture>
+<br/>
+<br/>
 
-Professionele implementatie met Nederlandse hosting en persoonlijke begeleiding. Geen licentiekosten, geen vendor lock-in, volledige controle over jouw bedrijfsprocessen en data.
-
-<img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/gradient-line.svg" alt="" width="100%"/>
-
-## Wat wij doen
-
-| Domein | Oplossing | Resultaat |
-|--------|-----------|-----------|
-| **ERP & CRM** | ERPNext · Frappe | Volledige bedrijfsvoering, open en transparant |
-| **Cloud & Samenwerking** | NextCloud · OnlyOffice | Veilig samenwerken op eigen infrastructuur |
-| **AI Automatisering** | Mistral AI · Custom Agents | Slimmer werken, minder handmatig werk |
-| **BIM & Engineering** | Blender · Bonsai · IfcOpenShell | Open standaarden, volledige vrijheid |
-| **E-mail & Agenda** | Mailcow | Zelfgehost, volledig onder eigen beheer |
-| **Hosting & Cloud** | Eigen infrastructuur | Data in Europa, AVG-compliant |
-
-<img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/gradient-line.svg" alt="" width="100%"/>
-
-## Waarom open source
-
-<table>
-  <tr>
-    <td width="33%" align="center"><b>€0 licentiekosten</b><br/><sub>De software is gratis, voor altijd</sub></td>
-    <td width="33%" align="center"><b>100% jouw eigendom</b><br/><sub>Exporteer alles, wanneer je wilt</sub></td>
-    <td width="33%" align="center"><b>Nederlandse hosting</b><br/><sub>Europese datacenters, AVG-compliant</sub></td>
-  </tr>
-  <tr>
-    <td align="center"><b>Eerlijke prijzen</b><br/><sub>Transparant, zonder verrassingen</sub></td>
-    <td align="center"><b>Snelle implementatie</b><br/><sub>Weken in plaats van maanden</sub></td>
-    <td align="center"><b>Lokale expertise</b><br/><sub>Nederlands team dat je taal spreekt</sub></td>
-  </tr>
-</table>
-
-<img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/gradient-line.svg" alt="" width="100%"/>
-
-## Tech Stack
-
-<p>
-  <img src="https://img.shields.io/badge/ERPNext-0089FF?style=flat-square&logoColor=white" alt="ERPNext"/>
-  <img src="https://img.shields.io/badge/Frappe-00A4EF?style=flat-square&logoColor=white" alt="Frappe"/>
-  <img src="https://img.shields.io/badge/NextCloud-0082C9?style=flat-square&logo=nextcloud&logoColor=white" alt="NextCloud"/>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=0a0a0a" alt="JavaScript"/>
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"/>
-  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=0a0a0a" alt="React"/>
-  <img src="https://img.shields.io/badge/Blender-E87D0D?style=flat-square&logo=blender&logoColor=white" alt="Blender"/>
-  <img src="https://img.shields.io/badge/Mistral_AI-ff6b00?style=flat-square&logoColor=white" alt="Mistral AI"/>
-  <img src="https://img.shields.io/badge/Mailcow-0a0a0a?style=flat-square&logoColor=white" alt="Mailcow"/>
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker"/>
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=0a0a0a" alt="Linux"/>
-</p>
-
-<img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/gradient-line.svg" alt="" width="100%"/>
-
-## Open Source
-
-Onze open source tools worden ontwikkeld via de [**OpenAEC Foundation**](https://github.com/OpenAEC-Foundation) — onze non-profit zusterorganisatie met **30+ projecten** voor de gehele bouwketen: van BIM-modellering en engineering tot documentbeheer en AI-automatisering.
-
-Open source software wordt continu verbeterd door een wereldwijde community. Wij maken het toegankelijk.
-
-<img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/gradient-line.svg" alt="" width="100%"/>
-
-## Team
-
-<table>
-  <tr>
-    <td align="center" width="50%">
-      <a href="https://github.com/DutchSailor"><img src="https://images.weserv.nl/?url=github.com/DutchSailor.png&h=120&w=120&fit=cover&mask=circle&maxage=7d" width="100" alt="Maarten"/></a><br/>
-      <b>Maarten Vroegindeweij</b><br/>
-      <sub>Founder & CEO</sub><br/>
-      <sub>16 years of experience in the AEC industry</sub><br/><br/>
-      <a href="https://github.com/DutchSailor"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/github-badge.svg" height="28" alt="GitHub"/></a>
-      <a href="https://www.linkedin.com/in/maarten-vroegindeweij/"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/linkedin-badge.svg" height="28" alt="LinkedIn"/></a>
-    </td>
-    <td align="center" width="50%">
-      <a href="https://github.com/FreekHeijting"><img src="https://images.weserv.nl/?url=github.com/FreekHeijting.png&h=120&w=120&fit=cover&mask=circle&maxage=7d" width="100" alt="Freek"/></a><br/>
-      <b>Freek Heijting</b><br/>
-      <sub>Co-Founder & AI Engineer</sub><br/>
-      <sub>Mechanical Engineering · Automation · AI Ecosystems</sub><br/><br/>
-      <a href="https://github.com/FreekHeijting"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/github-badge.svg" height="28" alt="GitHub"/></a>
-      <a href="https://www.linkedin.com/in/freek-heijting-aa4a73279/"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/linkedin-badge.svg" height="28" alt="LinkedIn"/></a>
-    </td>
-  </tr>
-</table>
-
-<img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/gradient-line.svg" alt="" width="100%"/>
-
-## Contact
-
-| | |
-|---|---|
-| 🌐 **Website** | [impertio.nl](https://www.impertio.nl) |
-| 📧 **Email** | [info@impertio.nl](mailto:info@impertio.nl) |
-| 📍 **Locatie** | Dordrecht, Nederland |
-
----
+<!--
+  TEAM CARDS: signature-style brand cards (profile/team/card-*.png). Each card is
+  one image (GitHub does not allow gradient CSS in READMEs), wrapped in a link to
+  the person's GitHub profile. The GitHub + LinkedIn logos are baked into the card
+  as brand marks. Rens van Driel's card is prepared but kept invisible (commented
+  out) until we make it visible; uncomment his <td> to add him.
+-->
+<p align="center"><a href="https://github.com/FreekHeijting"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/team/card-freek.png" width="32%" alt="Freek Heijting, Founder"/></a><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/team/spacer.png" width="1%" alt=""/><a href="https://github.com/Dollee-404"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/team/card-eelke.png" width="32%" alt="Eelke Dollee, Co-founder"/></a><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/team/spacer.png" width="1%" alt=""/><!-- Rens van Driel: slot reserved with a transparent placeholder so the row keeps three-card width and stays aligned with the banner. The card widths are percentages so the row scales with the column, exactly like the banner. To make Rens visible, replace the placeholder <img> below with: <a href="https://github.com/RensGits"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/team/card-rens.png" width="32%" alt="Rens van Driel, Co-founder"/></a> --><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/team/card-placeholder.png" width="32%" alt=""/></p>
 
 <p align="center">
-  <sub><b>Impertio Studio B.V.</b> · Dordrecht, Nederland · <i>Verdelen, schenken, delen</i></sub>
-</p>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/gradient-line.svg" alt="" width="60%"/>
+  <sub><b>Impertio Studio B.V.</b> &middot; Dordrecht, Netherlands &middot; <a href="https://www.impertio.nl"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/link-impertio-light.png"/><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/link-impertio-dark.png" alt="impertio.nl" height="15" align="middle"/></picture></a></sub>
 </p>
