@@ -9,15 +9,13 @@
   <img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/banner.png" alt="Impertio Studio" width="100%"/>
 </p>
 
-## About us
+<img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/head-aboutus.png" alt="About us" height="40"/>
 
 Impertio Studio builds complete, custom business systems on a stack of open source software. At the core sits ERPNext, which lays a strong, structured foundation, extended with modern React frontends on Frappe and shaped to how each client actually works. Around that core we integrate a full ecosystem, from Nextcloud for documents, communication, chat and video calls, and Stalwart for mail, to offline-capable field apps and an AI layer, into one connected environment with a single source of truth instead of disconnected islands.
 
 Standard where possible, custom where it matters. We run it as managed cloud on European servers, with EU data sovereignty, no vendor lock-in, and your data always exportable and yours.
 
-<img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/gradient-line.svg" alt="" width="100%"/>
-
-## Team
+<img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/head-team.png" alt="Team" height="40"/>
 
 <!--
   TEAM CARDS: signature-style brand cards (profile/team/card-*.png). Each card is
@@ -30,20 +28,21 @@ Standard where possible, custom where it matters. We run it as managed cloud on 
 <table>
   <tr>
     <td align="center" width="300">
-      <a href="https://github.com/FreekHeijting"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/team/card-freek.png" width="300" alt="Freek Heijting, Founder"/></a>
+      <a href="https://github.com/FreekHeijting"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/team/card-freek.png" width="280" alt="Freek Heijting, Founder"/></a>
     </td>
     <td align="center" width="300">
-      <a href="https://github.com/Dollee-404"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/team/card-eelke.png" width="300" alt="Eelke Dollee, Co-founder"/></a>
+      <a href="https://github.com/Dollee-404"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/team/card-eelke.png" width="280" alt="Eelke Dollee, Co-founder"/></a>
     </td>
-    <!-- <td align="center" width="300">
-      <a href="https://github.com/RensGits"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/team/card-rens.png" width="300" alt="Rens van Driel, Co-founder"/></a>
-    </td> -->
+    <td align="center" width="300">
+      <!-- Rens van Driel: space reserved (transparent spacer) so the row stays aligned with the banner
+           gradient. To make Rens visible, replace the spacer <img> below with:
+           <a href="https://github.com/RensGits"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/team/card-rens.png" width="280" alt="Rens van Driel, Co-founder"/></a> -->
+      <img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/team/card-placeholder.png" width="280" alt=""/>
+    </td>
   </tr>
 </table>
 </div>
 
-<img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/gradient-line.svg" alt="" width="100%"/>
-
 <p align="center">
-  <sub><b>Impertio Studio B.V.</b> &middot; Dordrecht, Netherlands &middot; <a href="https://www.impertio.nl">impertio.nl</a></sub>
+  <sub><b>Impertio Studio B.V.</b> &middot; Dordrecht, Netherlands &middot; <a href="https://www.impertio.nl"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/link-impertio.png" alt="impertio.nl" height="11" align="middle"/></a></sub>
 </p>
