@@ -19,29 +19,24 @@ Standard where possible, custom where it matters. We run it as managed cloud on 
 
 ## Team
 
+<!--
+  TEAM CARDS: signature-style brand cards (profile/team/card-*.png). Each card is
+  one image (GitHub does not allow gradient CSS in READMEs), wrapped in a link to
+  the person's GitHub profile. The GitHub + LinkedIn logos are baked into the card
+  as brand marks. Rens van Driel's card is prepared but kept invisible (commented
+  out) until we make it visible; uncomment his <td> to add him.
+-->
 <div align="center">
-<table width="100%">
+<table>
   <tr>
-    <td align="center" width="230px" valign="top">
-      <a href="https://github.com/FreekHeijting"><img src="https://images.weserv.nl/?url=github.com/FreekHeijting.png&h=240&w=240&fit=cover&mask=circle&maxage=7d" width="115" alt="Freek Heijting"/></a><br/>
-      <b>Freek Heijting</b><br/>
-      <sub>Founder</sub><br/><br/>
-      <a href="https://github.com/FreekHeijting"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/github-badge.svg" height="26" alt="GitHub"/></a>
-      <a href="https://www.linkedin.com/in/freek-heijting-aa4a73279/"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/linkedin-badge.svg" height="26" alt="LinkedIn"/></a>
+    <td align="center" width="300">
+      <a href="https://github.com/FreekHeijting"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/team/card-freek.png" width="300" alt="Freek Heijting, Founder"/></a>
     </td>
-    <td align="center" width="230px" valign="top">
-      <a href="https://github.com/Dollee-404"><img src="https://images.weserv.nl/?url=raw.githubusercontent.com/Impertio-Studio/.github/main/profile/team/eelke.png&h=240&w=240&fit=cover&mask=circle&maxage=7d" width="115" alt="Eelke Dollee"/></a><br/>
-      <b>Eelke Dollee</b><br/>
-      <sub>Technical&nbsp;Sales&nbsp;Consultant</sub><br/><br/>
-      <a href="https://github.com/Dollee-404"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/github-badge.svg" height="26" alt="GitHub"/></a>
-      <a href="https://www.linkedin.com/in/eelke-dollee-58780b17a/"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/linkedin-badge.svg" height="26" alt="LinkedIn"/></a>
+    <td align="center" width="300">
+      <a href="https://github.com/Dollee-404"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/team/card-eelke.png" width="300" alt="Eelke Dollee, Co-founder"/></a>
     </td>
-    <!-- <td align="center" width="33%" valign="top">
-      <a href="https://github.com/RensGits"><img src="https://images.weserv.nl/?url=raw.githubusercontent.com/Impertio-Studio/.github/main/profile/team/rens.jpeg&h=240&w=240&fit=cover&mask=circle&maxage=7d" width="115" alt="Rens van Driel"/></a><br/>
-      <b>Rens van Driel</b><br/>
-      <sub>Frontend&nbsp;&amp;&nbsp;Design</sub><br/><br/>
-      <a href="https://github.com/RensGits"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/github-badge.svg" height="26" alt="GitHub"/></a>
-      <a href="https://www.linkedin.com/in/rens-van-driel-b3b6514a/"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/linkedin-badge.svg" height="26" alt="LinkedIn"/></a>
+    <!-- <td align="center" width="300">
+      <a href="https://github.com/RensGits"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/team/card-rens.png" width="300" alt="Rens van Driel, Co-founder"/></a>
     </td> -->
   </tr>
 </table>
