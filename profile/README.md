@@ -1,4 +1,13 @@
-<!-- Banner: dynamic banner by Rens goes here / above this README -->
+<!--
+  BANNER: interim static brand banner (profile/banner.png, 1280x320, dark,
+  warm-monochrome huisstijl). This is a placeholder for the real deliverable:
+  a DYNAMIC banner we intend to build in the future (animated SVG, in the spirit
+  of the earlier header.svg). When that dynamic banner is ready, replace the
+  <img> below with it. Keep the reserved slot at the very top of the profile.
+-->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/banner.png" alt="Impertio Studio" width="100%"/>
+</p>
 
 ## About us
 
