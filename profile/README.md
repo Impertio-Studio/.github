@@ -9,13 +9,13 @@
   <img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/banner.png" alt="Impertio Studio" width="100%"/>
 </p>
 
-<img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/head-aboutus.png" alt="About us" height="40"/>
+<img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/head-aboutus.png" alt="About us" height="28"/>
 
 Impertio Studio builds complete, custom business systems on a stack of open source software. At the core sits ERPNext, which lays a strong, structured foundation, extended with modern React frontends on Frappe and shaped to how each client actually works. Around that core we integrate a full ecosystem, from Nextcloud for documents, communication, chat and video calls, and Stalwart for mail, to offline-capable field apps and an AI layer, into one connected environment with a single source of truth instead of disconnected islands.
 
 Standard where possible, custom where it matters. We run it as managed cloud on European servers, with EU data sovereignty, no vendor lock-in, and your data always exportable and yours.
 
-<img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/head-team.png" alt="Team" height="40"/>
+<img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/head-team.png" alt="Team" height="28"/>
 
 <!--
   TEAM CARDS: signature-style brand cards (profile/team/card-*.png). Each card is
