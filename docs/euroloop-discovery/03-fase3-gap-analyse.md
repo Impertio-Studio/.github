@@ -19,6 +19,15 @@
 | G11 | **Rapportage & facturatie** | "Dashboards zijn het makkelijke deel" `[UIT GESPREK]`; facturatie bewust buiten de demo | KPI-dashboards, managementinfo, factuur-koppeling (of -module), verplichte 17025-registraties | Middel | **Middel**: welk boekhoudpakket, wie factureert (per entiteit!), welke stuurinformatie |
 | G12 | **Platform & niet-functioneel** | Demonstrator zonder CI, tests, hardening; offline/mobiel ongebruikt | Productie-hosting (waar?), backups, beschikbaarheid (3 ploegen!), devices (controlekamer, werkvloer/ATEX?), NL/EN, performance bij jaren historie | Groot maar standaard-werk | **Middel**: hosting-voorkeur, devices op de vloer, beschikbaarheidseisen, talen |
 
+### G13 — De keten sales → planning → uitvoering (aparte dimensie)
+
+| Aspect | Huidig | Nodig | Onzekerheid |
+|---|---|---|---|
+| Capaciteitsinzicht bij verkoop | Datum wordt bij sales toegezegd zonder zicht op de agenda; `agreed_date` is een vrij veld, bewaking alleen achteraf (driftindicator op het planbord) `[UIT GESPREK + code]` | Ontwerpkeuze: live capaciteitsinzicht bij offreren, een reserveringsmechanisme, of bewuste vrije toezegging mét bewaking | **Zeer hoog** — dit is een ontwerpvraag, geen schuldvraag: verkoopbelofte en beschikbare capaciteit botsen structureel; het systeem moet die spanning zichtbaar en bespreekbaar maken |
+| Orderintake & overdracht | Excel-prijstabel → sjabloonofferte → mailthread → handmatige DCS; contactpersoon en PO-referentie reizen niet mee; geen order-entiteit | Eén dossier van lead tot certificaat: offerte- en ordergegevens die de planning en werkvloer automatisch meekrijgen | **Hoog** — welke informatie sales feitelijk vastlegt en wat planning nodig heeft, moet aan tafel boven water komen |
+| Terugkoppeling naar sales | Onbekend hoe sales nu hoort dat een kalibratie schuift of gereed is `[AANNAME]` | Statusinzicht voor sales (klant belt sales, niet de planner) | **Hoog** |
+| **Scope-beslissing sales** | De demo bevat al een offertemodule; het echte offerteproces leeft in Excel/Word; iHomer-"Flow" dekte "van offerte tot factuur"; CRM-gebruik onbekend | **Drie opties: (1) offertes/orders in het nieuwe systeem bouwen, (2) koppelen met bestaande salestooling, (3) sales buiten scope laten en starten bij "gewonnen opdracht".** | **⚠ Grote scope-beslissing** — verschuift de systeemgrens, de migratie (klant- en offertedata) én het aantal gebruikers/licenties. Moet expliciet als keuze in de offerte, niet impliciet uit de demo volgen |
+
 ## 3.2 De grootste onzekerheden (prioritering voor de vragenlijst)
 
 1. **Systeemlandschap & vervangingsgrens** (G1/G8/G10): wat draait er werkelijk (iHomer-Flow, Bisbrick, CVT, My Euroloop, witness) en wat vervangt vs. koppelt het nieuwe systeem? Zonder dit antwoord is geen scope-afbakening mogelijk. *Bepaalt: scope, migratie, integraties.*
@@ -29,6 +38,7 @@
 6. **Migratieomvang** (G10): bronnen, volumes, kwaliteit, historie. *Bepaalt: uren + het klassieke vaste-prijs-risico.*
 7. **Certificering/compliance** (G6): RvA-eisen aan het systeem, tekenbevoegdheid. *Bepaalt: scope + niet-onderhandelbare eisen.*
 8. **Normen & prijsdrivers** (G2/G1): normbibliotheek en echte prijstabelvorm. *Bepaalt: configuratie- vs. maatwerkstempel op de offerte-module.*
+9. **Sales-scope en de keten sales → planning** (G13): bouwen, koppelen of buiten scope; capaciteitsinzicht bij verkoop; terugkoppeling naar sales; welke offerte-/ordergegevens de planning meekrijgt. *Bepaalt: systeemgrens, licenties, migratie — de grootste enkelvoudige scope-beslissing van dit traject.*
 
 ## 3.3 Wat al vaststaat (niet meer uitvragen, hooguit bevestigen)
 
@@ -40,4 +50,4 @@
 
 ## 3.4 Samenvatting fase 3
 
-Het echte gat zit niet in schermen — die bewijst de demonstrator al — maar in **vier fundamenten** (mail-integratie, server-side planning/capaciteit, rollen/beveiliging, 17025-borging) en **twee besluiten** (systeemgrens t.o.v. het bestaande landschap; entiteitenstructuur/MNR). De acht onzekerheden uit §3.2 zijn direct vertaald naar de vragenlijst van fase 4: elke themagroep daar adresseert er minstens één, en de top-5 prijsbepalende vragen komen er rechtstreeks uit voort.
+Het echte gat zit niet in schermen — die bewijst de demonstrator al — maar in **vier fundamenten** (mail-integratie, server-side planning/capaciteit, rollen/beveiliging, 17025-borging) en **drie besluiten** (systeemgrens t.o.v. het bestaande landschap; entiteitenstructuur/MNR; **de sales-scope: bouwen, koppelen of buiten scope**). De keten sales → planning → uitvoering is daarbij een eigen dimensie: de spanning tussen verkoopbelofte en beschikbare capaciteit is een ontwerpvraag voor het nieuwe systeem — geen fout van sales of planning — en het antwoord (capaciteitsinzicht bij verkoop, reservering, of vrije toezegging met bewaking) bepaalt mede de bouw van de plannings-engine. De negen onzekerheden uit §3.2 zijn direct vertaald naar de vragenlijst van fase 4: elke themagroep daar adresseert er minstens één, en de top-5 prijsbepalende vragen komen er rechtstreeks uit voort.

@@ -28,7 +28,21 @@ Twaalf domeinschermen (proces, dashboard, klanten, offertes, werkvoorbereiding/D
 
 Modelzwaktes voor productie: geen enkele controller-validatie (alle `.py` leeg), nummers niet uniek en race-gevoelig gegenereerd, statussen als vrije Selects (direct save omzeilt elke overgang), geen `is_submittable`/bevriezing van gecertificeerde meetdata, denormalisatie zonder bewaking, taalmix NL/EN.
 
-## 2.4 Technische staat
+## 2.4 Overdrachtspunt sales → planning
+
+De aanvullende kernvraag: zitten klant, offerte en opdracht als entiteit in de applicatie, of wordt een verkochte opdracht "vanuit de mailbox gepland"?
+
+**In de app (het beoogde ontwerp) bestaat de overdracht als keten van entiteiten.** `EuroLoop Customer` en `EuroLoop Quotation` zijn echte doctypes; `workflow.win_quotation` maakt bij "gewonnen" server-side de DCS aan (kopieert klant/meter/loop/norm, genereert flowpoints uit de regulation, zet U1/D1-spools en drie adresblokken uit de klant — `euroloop/api/workflow.py`), en `release_dcs` maakt daarna de kalibratie met status **"te plannen"** en kopieert `agreed_date` uit de offerte. De opdracht wordt dus een planbare eenheid **pas bij DCS-vrijgave**; het planbord trekt uit die backlog.
+
+**Wat er bij die overdracht structureel wringt (aangetoond in code):**
+
+1. **Er is geen order-entiteit.** De "opdracht" is een frontend-projectie over offerte → DCS → kalibratie; `po_number` en `reference_number` blijven op de offerte achter en reizen niet mee naar planning of werkvloer.
+2. **De contactpersoon gaat verloren.** `Quotation.contact` is een vrij tekstveld (Data), geen link naar `EuroLoop Contact` — precies de persoon met wie sales de afspraken maakte is downstream niet herbruikbaar.
+3. **De verkoopbelofte wordt vastgelegd maar niet getoetst.** `agreed_date` is een vrij datumveld op de offerte; er is géén capaciteitscheck op het moment dat sales de datum toezegt. Het planbord bewaakt achteraf de drift tussen belofte en planning (PLN-04, rood "+Xd") — bewaking achteraf, geen check vooraf. *Dit is een ontwerpvraag voor het nieuwe systeem (capaciteitsinzicht bij verkoop? reservering? vrije toezegging met bewaking?), geen fout van sales of planning.*
+4. **De klantintentie zit niet in de offerte.** De offerte draagt vier inhoudelijke velden (maat, aantal punten, norm, loop); al het overige — kalibratieplan, witnesses, logistiek — leeft in het echte proces in de mailthread en moet in werkvoorbereiding alsnog handmatig de DCS in (K1/K3). In het huidige échte proces is de instroom dus: Excel-prijstabel → sjabloonofferte → mailthread → handmatig DCS; drie kopieerslagen vóór er iets planbaars bestaat.
+5. **Geen verlies-/annuleringspad:** status "verloren" bestaat zonder endpoint; een gewonnen opdracht die alsnog vervalt kent geen route terug uit de planning.
+
+## 2.5 Technische staat
 
 | Component | Oordeel | Kern |
 |---|---|---|
@@ -43,7 +57,7 @@ Modelzwaktes voor productie: geen enkele controller-validatie (alle `.py` leeg),
 | Schermen + procesderivatie (`lib/process.ts`) | **Aanpassen** | De UX-kern en de waarde van de demo; datalaag moet omgehangen |
 | Demo-tuig (seed 1.113 regels, providers, `euroloop/demo/`) | **Verwijderen/dev-only** | Uitstekend demomateriaal, hoort niet in productie |
 
-## 2.5 Pijnpunten die de "wildgroei" verklaren (knelpunt-kandidaten)
+## 2.6 Pijnpunten die de "wildgroei" verklaren (knelpunt-kandidaten)
 
 Uit gesprek + repo-documentatie, genummerd als kandidaat-knelpunten voor het rode-draad-register:
 
@@ -64,9 +78,10 @@ Uit gesprek + repo-documentatie, genummerd als kandidaat-knelpunten voor het rod
 
 **Wildgroei-mechanisme** `[ANALYSE]`: elke processtap maakt zijn eigen kopie van dezelfde data (Excel → mail → DCS → MNR), de mailthread is de enige plek waar de klantintentie compleet staat, en na de handover "bezit" niemand het record. Mail is dáárom het planningssysteem geworden: het was de enige plek waar alles samenkwam.
 
-## 2.6 Samenvatting fase 2
+## 2.7 Samenvatting fase 2
 
 1. De repo is een **hoogwaardige demonstrator + productie-aanzet** op een degelijke template — een requirements-instrument dat bewust markeert wat verzonnen is, geen half product.
 2. **Herbruikbaar:** architectuurfundament, schermen/UX, procesderivatie, domeinvocabulaire, sync/storage-patronen. **Nieuwbouw:** rollen/permissies, mail-integratie (de kern!), planning-server-side, certificering/PDF, MNR-flow, backend-tests, facturatie.
 3. De **afstand tussen "mail-UI op de juiste plek" (klaar) en "werkende mail-als-planningstool"** (mailboxkoppeling, job-matching, flag-detectie, rechten/AVG) is de grootste openstaande bouwopgave — en de haalbaarheidsvraag ("hoe vindt een mail zijn job?") is door de demo bewust ontweken.
 4. Vrijwel alle domeinregels in de app zijn **onbevestigde aannames** (rollen, prijsdrivers, normen, uitvoeringsproces, certificaat, 3 slots/dag) — precies de lijst die de vragenlijst moet afwerken.
+5. **Sales → planning:** klant en offerte bestaan als entiteit en de overdracht is als keten gemodelleerd (offerte gewonnen → DCS → kalibratie "te plannen"), maar een order-entiteit ontbreekt, de contactpersoon en PO-referentie reizen niet mee, de afgesproken datum wordt zonder capaciteitscheck toegezegd (alleen driftbewaking achteraf), en de werkelijke klantintentie komt in het echte proces nog steeds via de mailthread binnen — drie kopieerslagen vóór er iets planbaars is.
