@@ -38,16 +38,28 @@ detecteert het in deze volgorde (meest specifiek eerst):
 2. `pyproject.toml` — Frappe- en Python-apps (statische `[project].version` of
    een dynamische version via flit/hatch, uit `<module>/__init__.py`)
 3. `package.json` — skill-packages, templates, JS-apps
+4. `VERSION` — taal-agnostische fallback: een plain-text bestand op de repo-root
+   met precies een semver-regel (bijvoorbeeld `0.1.0`). Bedoeld voor repos zonder
+   taal-manifest, zoals docs-, template- en scaffold-repos, zodat ook die een
+   conventionele version-plek hebben. Laagste precedentie: hij wordt alleen
+   gelezen als geen van de drie manifesten hierboven bestaat.
 
 Ontbreekt een manifest, of is de version niet leesbaar, dan faalt de workflow
-luid. Er is geen stille fallback naar een ander manifest.
+luid. Er is geen stille fallback naar een ander manifest. Let op: dit geldt ook
+voor `VERSION`. Bestaat er wel een `package.json` maar zonder `version`-veld, dan
+faalt de workflow luid op die `package.json`; hij valt niet stilletjes terug op
+een `VERSION`-bestand. Elk repo heeft precies een version-bron.
 
 ## Adoptie in een repo
 
 1. Kopieer `docs/release.yml.template` uit deze repo naar
    `.github/workflows/release.yml` in je eigen repo.
 2. Commit dat via de normale branch- en PR-flow (`GIT_PRACTICES.md`).
-3. Zorg dat de repo een `CHANGELOG.md` in Keep a Changelog-formaat heeft, met
+3. Zorg dat de repo een version-bron heeft op de voor z'n type conventionele
+   plek: een taal-manifest (`.claude-plugin/plugin.json`, `pyproject.toml` of
+   `package.json`), of, voor een repo zonder taal-manifest, een `VERSION`-bestand
+   op de repo-root met een enkele semver-regel (bijvoorbeeld `0.1.0`).
+4. Zorg dat de repo een `CHANGELOG.md` in Keep a Changelog-formaat heeft, met
    per version een `## [<version>]`-sectie. Een bump zonder bijbehorende
    CHANGELOG-sectie laat de workflow luid falen.
 

@@ -9,34 +9,34 @@
   <img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/banner.png" alt="Impertio Studio" width="100%"/>
 </p>
 
-## About us
+<br/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/head-aboutus-light.png"/>
+  <img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/head-aboutus-dark.png" alt="About us" height="28"/>
+</picture>
+<br/>
 
-Impertio Studio builds complete, custom business systems on a stack of open source software. ERPNext forms the structured core, extended with modern React frontends on Frappe and shaped around how each client actually works. Around it we integrate a full ecosystem, from Nextcloud for documents, communication, chat and video calls, and Stalwart for mail, to offline-capable field apps and an AI layer, into one connected environment with a single source of truth instead of disconnected islands.
+Impertio Studio builds complete, custom business systems on a stack of open source software. At the core sits ERPNext, which lays a strong, structured foundation, extended with modern React frontends on Frappe and shaped to how each client actually works. Around that core we integrate a full ecosystem, from Nextcloud for documents, communication, chat and video calls, and Stalwart for mail, to offline-capable field apps and an AI layer, into one connected environment with a single source of truth instead of disconnected islands.
 
-Standard where possible, custom where it matters. We run everything as managed cloud on European servers, with EU data sovereignty, no vendor lock-in, and your data always exportable and yours.
+Standard where possible, custom where it matters. We run it as managed cloud on European servers, with EU data sovereignty, no vendor lock-in, and your data always exportable and yours.
 
-<img src="https://raw.githubusercontent.com/Impertio-Studio/.github/development/profile/gradient-line.svg" alt="" width="100%"/>
+<br/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/head-team-light.png"/>
+  <img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/head-team-dark.png" alt="Team" height="28"/>
+</picture>
+<br/>
+<br/>
 
-## Team
+<!--
+  TEAM CARDS: signature-style brand cards (profile/team/card-*.png). Each card is
+  one image (GitHub does not allow gradient CSS in READMEs), wrapped in a link to
+  the person's GitHub profile. The GitHub + LinkedIn logos are baked into the card
+  as brand marks. The row holds three cards at 32% each, separated by 1% spacers,
+  so it scales with the column and stays aligned with the banner above it.
+-->
+<p align="center"><a href="https://github.com/FreekHeijting"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/team/card-freek.png" width="32%" alt="Freek Heijting, Founder"/></a><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/team/spacer.png" width="1%" alt=""/><a href="https://github.com/Dollee-404"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/team/card-eelke.png" width="32%" alt="Eelke Dollee, Co-founder"/></a><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/team/spacer.png" width="1%" alt=""/><a href="https://github.com/RensGits"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/team/card-rens.png" width="32%" alt="Rens van Driel, Co-founder"/></a></p>
 
 <p align="center">
-  <a href="https://github.com/FreekHeijting"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/development/profile/team/card-freek.svg" width="30%" alt="Freek Heijting, Founder"/></a>
-  &nbsp;&nbsp;
-  <a href="https://github.com/Dollee-404"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/development/profile/team/card-eelke.svg" width="30%" alt="Eelke Dollee, Technical Sales Consultant"/></a>
-  &nbsp;&nbsp;
-  <a href="https://github.com/RensGits"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/development/profile/team/card-rens.svg" width="30%" alt="Rens van Driel, Frontend & Design"/></a>
-</p>
-
-<p align="center">
-  <a href="https://www.linkedin.com/in/freek-heijting-aa4a73279/"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/development/profile/linkedin-badge.svg" height="24" alt="Freek on LinkedIn"/></a>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="https://www.linkedin.com/in/eelke-dollee-58780b17a/"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/development/profile/linkedin-badge.svg" height="24" alt="Eelke on LinkedIn"/></a>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="https://www.linkedin.com/in/rens-van-driel-b3b6514a/"><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/development/profile/linkedin-badge.svg" height="24" alt="Rens on LinkedIn"/></a>
-</p>
-
-<img src="https://raw.githubusercontent.com/Impertio-Studio/.github/development/profile/gradient-line.svg" alt="" width="100%"/>
-
-<p align="center">
-  <sub><b>Impertio Studio B.V.</b> &middot; Dordrecht, Netherlands &middot; <a href="https://www.impertio.nl">impertio.nl</a></sub>
+  <sub><b>Impertio Studio B.V.</b> &middot; Dordrecht, Netherlands &middot; <a href="https://www.impertio.nl"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/link-impertio-light.png"/><img src="https://raw.githubusercontent.com/Impertio-Studio/.github/main/profile/link-impertio-dark.png" alt="impertio.nl" height="15" align="absmiddle"/></picture></a></sub>
 </p>
