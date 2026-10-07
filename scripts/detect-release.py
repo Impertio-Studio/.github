@@ -21,6 +21,9 @@ Manifest precedence (most specific first):
   4. VERSION                     (language-agnostic plain-text fallback:
                                   docs / scaffolds / templates without any
                                   language manifest; one semver line)
+  5. .claude-plugin/marketplace.json  with exactly one local plugin: the
+                                  plugin.json at <source>/.claude-plugin/ (a
+                                  plugin that keeps its runtime in a subfolder)
 
 Notes are NOT required to be present here: on a genuine bump the caller workflow
 enforces that a CHANGELOG section exists (notes_found=true). Keeping that policy
@@ -139,10 +142,53 @@ def detect(repo: Path) -> tuple[str, str]:
     if version_file.is_file():
         return "VERSION", read_version_file(version_file)
 
+    marketplace = repo / ".claude-plugin" / "marketplace.json"
+    if marketplace.is_file():
+        found = read_marketplace_plugin(repo, marketplace)
+        if found is not None:
+            return found
+
     die(
         f"no release manifest found in '{repo}'. Expected one of: "
-        ".claude-plugin/plugin.json, pyproject.toml, package.json, VERSION"
+        ".claude-plugin/plugin.json, pyproject.toml, package.json, VERSION, "
+        "or a .claude-plugin/marketplace.json whose one local plugin has a "
+        ".claude-plugin/plugin.json inside the repo"
     )
+
+
+def read_marketplace_plugin(repo: Path, marketplace: Path) -> tuple[str, str] | None:
+    """The plugin.json of the one local plugin a marketplace.json lists, if there is one.
+
+    A Claude Code plugin repo may keep its runtime in a subfolder: the root then holds only
+    .claude-plugin/marketplace.json, whose plugin entry has a local `source` such as "./plugin",
+    and the manifest lives at <source>/.claude-plugin/plugin.json (tmux-orchestration since
+    October 2026). This is the last place looked at, so a repo with any other manifest keeps it.
+    A remote source, a source outside the repo or a source without a plugin.json is no manifest;
+    two or more local plugins make the version ambiguous and fail loud.
+    """
+    try:
+        data = json.loads(marketplace.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        die(f"{marketplace} is not valid JSON: {exc}")
+    plugins = data.get("plugins") if isinstance(data, dict) else None
+    root = repo.resolve()
+    found: list[Path] = []
+    for entry in plugins if isinstance(plugins, list) else []:
+        source = entry.get("source") if isinstance(entry, dict) else None
+        if not isinstance(source, str) or "://" in source:
+            continue
+        manifest = (repo / source / ".claude-plugin" / "plugin.json").resolve()
+        if manifest.is_file() and manifest.is_relative_to(root):
+            found.append(manifest)
+    if len(found) > 1:
+        die(
+            f"{marketplace} lists {len(found)} local plugins with a plugin.json; "
+            "the release version of the repo is ambiguous"
+        )
+    if not found:
+        return None
+    rel = found[0].relative_to(root).as_posix()
+    return f"marketplace.json -> {rel}", read_json_version(found[0])
 
 
 def extract_notes(repo: Path, version: str) -> str | None:

@@ -43,6 +43,14 @@ detecteert het in deze volgorde (meest specifiek eerst):
    taal-manifest, zoals docs-, template- en scaffold-repos, zodat ook die een
    conventionele version-plek hebben. Laagste precedentie: hij wordt alleen
    gelezen als geen van de drie manifesten hierboven bestaat.
+5. `.claude-plugin/marketplace.json` met precies een lokale plugin: voor een
+   Claude Code plugin die zijn runtime in een submap houdt (zoals
+   tmux-orchestration in `plugin/`). De workflow volgt de `source` van die ene
+   plugin (bijvoorbeeld `./plugin`) en leest `<source>/.claude-plugin/plugin.json`.
+   Laatste plek in de volgorde, dus een repo met een van de manifesten hierboven
+   houdt die. Een bron op afstand, een bron buiten de repo of een bron zonder
+   `plugin.json` telt niet; twee of meer lokale plugins maken de version
+   onduidelijk en laten de workflow luid falen.
 
 Ontbreekt een manifest, of is de version niet leesbaar, dan faalt de workflow
 luid. Er is geen stille fallback naar een ander manifest. Let op: dit geldt ook

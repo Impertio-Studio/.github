@@ -19,6 +19,8 @@ name: Release
 #   1. .claude-plugin/plugin.json   (Claude Code plugins)
 #   2. pyproject.toml               (Frappe / Python apps; static or dynamic)
 #   3. package.json                 (skill-packages / templates / JS apps)
+#   4. VERSION                      (repos without a language manifest)
+#   5. .claude-plugin/marketplace.json with one local plugin: its <source>/.claude-plugin/plugin.json
 #
 # It fails loud (no silent fallback): a missing manifest is an error, and a
 # bump without a matching `## [<version>]` section in CHANGELOG.md is an error.
